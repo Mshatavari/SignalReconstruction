@@ -34,6 +34,11 @@ Where,<br/>
 * Linear interpolation is the best for randomly missing samples and for short missing intervals, while autoregressive model is better for longer (than 25 samples) missing intervals<br/>
 * For long missing intervals, cubic spline has unpredicted behavior and error is higher than with the other methods<br/>
 
+## Important applications<br/>
+* Recognizing variability of heart activity in clinical decision making (Alfaouri et al., 2008);
+* Estimating diastolic and systolic blood pressure using photoplethysmography (PPG) signals (Mousavi et al., 2018);
+* Analyzing beat-to-beat changes in features such as P waves, QRS complexes, and T waves from single-lead ECGs (Langley et al., 2010).
+
 ## **References**<br/>
 Chadwick N, McMeekin D, Tan T. Classifying eye and head movement artifacts in EEG signals. In: 5th IEEE international conference on digital ecosystems and technologies, 2011. IEEE-DEST 2011; 2011. p. 285–91.<br/>
 Fritsch, F. N., and R. E. Carlson. "Monotone Piecewise Cubic Interpolation." SIAM Journal on Numerical Analysis. Vol. 17, 1980, pp.238–246.<br/>

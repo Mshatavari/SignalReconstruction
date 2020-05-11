@@ -6,7 +6,22 @@ In this project, the missing data of the biomedical signals is reconstructed usi
 3. Last Observation Carried Forward (LOCF)<br/>
 4. Autoregressive model<br/>
 
-![]()
+Error calculation:
+
+Where, 
+𝑥_𝑔 [𝑛]  = Original signal
+𝑥_𝑟 [𝑛]  = Reconstructed signal
+𝑇 = length of the signal 𝑥_𝑔 [𝑛]  
+𝑁 = number of removed random points.
+	where, 𝑁∈[1,𝑇/3]
+
+### Calculating RMS error using 300 trials for random and consecutive missing data
+<img src="Images/300 trials random start random values.png" width=80%><br/>
+<img src="Images/300 trials consecutive missing values.png" width=80%><br/>
+
+### Calculating RMS error using 3000 trials for random and consecutive missing data
+<img src="Images/3000 trials random missing values.png" width=80%><br/>
+<img src="Images/3000 trials consecutive missing values.png" width=80%><br/>
 
 ## **References**<br/>
 Chadwick N, McMeekin D, Tan T. Classifying eye and head movement artifacts in EEG signals. In: 5th IEEE international conference on digital ecosystems and technologies, 2011. IEEE-DEST 2011; 2011. p. 285–91.<br/>

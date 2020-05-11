@@ -20,12 +20,13 @@ Where,<br/>
 	where, 𝑁∈[1,𝑇/3]
 
 ### Calculating RMS error using 300 trials for random and consecutive missing data
-<img src="Images/300 trials random start random values.png" width=80%><br/>
-<img src="Images/300 trials consecutive missing values.png" width=80%><br/>
+<img src="Images/300 trials random start random values.png" width=50%><img src="Images/300 trials consecutive missing values.png" width=50%><br/>
 
 ### Calculating RMS error using 3000 trials for random and consecutive missing data
-<img src="Images/3000 trials random missing values.png" width=80%><br/>
-<img src="Images/3000 trials consecutive missing values.png" width=80%><br/>
+<img src="Images/3000 trials random missing values.png" width=50%><img src="Images/3000 trials consecutive missing values.png" width=50%><br/>
+
+### Calculating the error for different imputation techniques with 10 iterations
+<img src="Images/Error graph.png" width=80%><br/>
 
 ## Conclusion<br/>
 * Average error is increasing as the number of missing samples increase<br/>
@@ -40,13 +41,9 @@ Where,<br/>
 * Analyzing beat-to-beat changes in features such as P waves, QRS complexes, and T waves from single-lead ECGs (Langley et al., 2010).
 
 ## **References**<br/>
-Chadwick N, McMeekin D, Tan T. Classifying eye and head movement artifacts in EEG signals. In: 5th IEEE international conference on digital ecosystems and technologies, 2011. IEEE-DEST 2011; 2011. p. 285–91.<br/>
-Fritsch, F. N., and R. E. Carlson. "Monotone Piecewise Cubic Interpolation." SIAM Journal on Numerical Analysis. Vol. 17, 1980, pp.238–246.<br/>
-Higham, D. (1992). Monotonic piecewise cubic interpolation, with applications to ODE plotting. Journal of Computational and Applied Mathematics,39(3). doi:10.1016/0377-0427(92)90205-c<br/>
-Hussain, M. Z., Irshad, M., Sarfraz, M., & Zafar, N. (2015). Interpolation of Discrete-Time Signals Using Cubic Spline Function. 2015 19th International Conference on Information Visualisation. doi:10.1109/iv.2015.82<br/>
-Fung, David S. Methods for the Estimation of Missing Values in Time Series. Edith Cowan University, Edith Cowan University, Research Online, Perth, Western Australia, Perth, Western Australia, 2006.<br/>
-Musil, C. M., Warner, C. B., Yobas, P. K., & Jones, S. L. (2002). A Comparison of Imputation Techniques for Handling Missing Data. Western Journal of Nursing Research, 24(7), 815–829. https://doi.org/10.1177/019394502762477004<br/>
-Roland Priemer (1991). Introductory Signal Processing. World Scientific. p. 1. ISBN 9971509199.<br/>
-Rubin, Donald B. “Inference and Missing Data.” Biometrika, vol. 63, no. 3, 1976, p. 581., doi:10.2307/2335739.<br/>
-Wahab, Muhammad. (2017). Interpolation and Extrapolation<br/>
-Zhou, Xi-Yu, and Joon S. Lim. “EM Algorithm with GMM and Naive Bayesian to Implement Missing Values.” Advanced Science and Technology Letters, 2014, doi:10.14257/astl.2014.46.01.<br/>
+* Alfaouri, Mikhled, and Khaled Daqrouq. “ECG Signal Denoising By Wavelet Transform Thresholding.” American Journal of Applied Sciences, vol. 5, no. 3, pp. 276–281, 2008<br/>
+* Hamer, Robert M., and Pippa M. Simpson. “Last Observation Carried Forward Versus Mixed Models in the Analysis of Psychiatric Clinical Trials.” American Journal of Psychiatry, vol. 166, no. 6, pp. 639–641, 2009.<br/>
+* Lambers, James V., and Amber C. Sumner. Explorations in Numerical Analysis. World Scientific Publishing, 2018.<br/>
+* Langley, P., et al. “Principal Component Analysis as a Tool for Analyzing Beat-to-Beat Changes in ECG Features: Application to ECG-Derived Respiration.” IEEE Transactions on Biomedical Engineering, vol. 57, no. 4, pp. 821–829, 2010.<br/>
+* Mousavi, Seyedeh Somayyeh, et al. “Blood Pressure Estimation from Appropriate and Inappropriate PPG Signals Using A Whole-Based Method.” Biomedical Signal Processing and Control, vol. 47, pp. 196–206, 2018.<br/>
+

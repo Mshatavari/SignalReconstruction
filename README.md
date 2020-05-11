@@ -6,13 +6,17 @@ In this project, the missing data of the biomedical signals is reconstructed usi
 3. Last Observation Carried Forward (LOCF)<br/>
 4. Autoregressive model<br/>
 
-Error calculation:
+The reconstructed signal using 4 techniques are compared by finding the error between the original signal and the reconstructed signal. Two experiments are performed to find the average error. One uses random missing values starting from random point and the other experiments uses consecutive missing values starting from a random point. The graphs for the different techniques and for the average errors are plot in the MATLAB software.<br/>
 
-Where, 
-𝑥_𝑔 [𝑛]  = Original signal
-𝑥_𝑟 [𝑛]  = Reconstructed signal
-𝑇 = length of the signal 𝑥_𝑔 [𝑛]  
-𝑁 = number of removed random points.
+<img src="Images/Case-1.png" width=80%><br/>
+
+Error calculation:<br/>
+                <img src="Images/Error formula.png" width=50%><br/>
+Where,<br/>
+𝑥_𝑔 [𝑛]  = Original signal<br/>
+𝑥_𝑟 [𝑛]  = Reconstructed signal<br/>
+𝑇 = length of the signal 𝑥_𝑔 [𝑛]<br/>
+𝑁 = number of removed random points
 	where, 𝑁∈[1,𝑇/3]
 
 ### Calculating RMS error using 300 trials for random and consecutive missing data
@@ -22,6 +26,13 @@ Where,
 ### Calculating RMS error using 3000 trials for random and consecutive missing data
 <img src="Images/3000 trials random missing values.png" width=80%><br/>
 <img src="Images/3000 trials consecutive missing values.png" width=80%><br/>
+
+## Conclusion<br/>
+* Average error is increasing as the number of missing samples increase<br/>
+* Average error for missing samples is lower than for missing intervals (with the same number of missing samples)<br/>
+* When the missing samples are randomly distributed, linear and cubic interpolations provide better results and slower error growing rate<br/>
+* Linear interpolation is the best for randomly missing samples and for short missing intervals, while autoregressive model is better for longer (than 25 samples) missing intervals<br/>
+* For long missing intervals, cubic spline has unpredicted behavior and error is higher than with the other methods<br/>
 
 ## **References**<br/>
 Chadwick N, McMeekin D, Tan T. Classifying eye and head movement artifacts in EEG signals. In: 5th IEEE international conference on digital ecosystems and technologies, 2011. IEEE-DEST 2011; 2011. p. 285–91.<br/>
